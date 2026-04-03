@@ -1,108 +1,371 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Academic homepage of Changmin Kim" />
-  <title>Changmin Kim | Homepage</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Changmin Ryu - Integrated M.S./Ph.D. student at Yonsei University, researching Medical Image Processing and Explainable AI.">
+    <meta name="author" content="Changmin Ryu">
+    <title>Changmin Ryu</title>
+
+    <link rel="stylesheet" href="./css/academic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-  <header class="topbar">
-    <a class="brand" href="#home">CK.</a>
-    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
-    <nav class="nav" id="site-nav">
-      <a href="#about">About</a>
-      <a href="#news">News</a>
-      <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-card">
-        <p class="eyebrow">Assistant Professor, SKKU Design</p>
-        <h1>Changmin Kim</h1>
-        <p class="subtitle">Design / HCI researcher building future-facing interactive systems with IoT and AI.</p>
-        <div class="cta-row">
-          <a class="btn" href="./assets/CV_Changmin_Kim.pdf" target="_blank" rel="noopener">Curriculum Vitae</a>
-          <a class="btn ghost" href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a>
+    <div class="scroll-progress"></div>
+
+    <div class="mobile-header">
+        <a href="#" class="logo">CR.</a>
+        <div class="mobile-header-right">
+            <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-      </div>
-      <aside class="profile">
-        <img src="https://avatars.githubusercontent.com/u/9919?s=280&v=4" alt="Profile placeholder" />
-        <p>Seoul, Korea</p>
-        <p>Open to collaborations</p>
-      </aside>
-    </section>
+    </div>
 
-    <section id="about" class="panel reveal">
-      <h2>About</h2>
-      <p>
-        I am an Assistant Professor in the Department of Design at Sungkyunkwan University (SKKU).
-        My research explores interactive systems that combine design practice with emerging technologies,
-        especially Internet of Things (IoT) and Artificial Intelligence (AI).
-      </p>
-      <p>
-        Keywords: HCI, Interaction Design, Smart Environments, AI-Enhanced Interfaces, Speculative Design.
-      </p>
-    </section>
+    <div class="page-wrapper">
 
-    <section id="news" class="panel reveal">
-      <h2>Latest News</h2>
-      <ul class="timeline">
-        <li><span>Mar 2026</span><p>Updated personal website and moved to GitHub Pages.</p></li>
-        <li><span>Feb 2026</span><p>Paper accepted to CHI 2026.</p></li>
-        <li><span>Nov 2025</span><p>Invited talk on AI-enabled interaction design.</p></li>
-      </ul>
-    </section>
+        <aside class="sidebar">
+            <div class="sidebar-profile">
+                <img src="./assets/profile.jpg" alt="Changmin Ryu" class="profile-img">
+                <h1 class="sidebar-name">Changmin Ryu</h1>
+                <p class="sidebar-title">Integrated M.S./Ph.D. Student</p>
+                <p class="sidebar-affiliation">Medical Imaging AI Lab, Yonsei University</p>
+            </div>
 
-    <section id="publications" class="panel reveal">
-      <h2>Selected Publications</h2>
-      <article>
-        <h3>Reminiscences of Futures (RoF)</h3>
-        <p>CHI 2026</p>
-      </article>
-      <article>
-        <h3>ShamAIn: Designing Superior Conversational AI Inspired by Shamanism</h3>
-        <p>CHI 2025</p>
-      </article>
-      <article>
-        <h3>The effect of In-Car Agent Embodiment on Different Types of Information</h3>
-        <p>CHI 2025</p>
-      </article>
-    </section>
+            <p class="sidebar-interests">
+                Researching <span class="typed-text">Medical Image Processing</span>
+            </p>
 
-    <section id="experience" class="panel reveal">
-      <h2>Experience</h2>
-      <div class="grid-2">
-        <article>
-          <h3>Sungkyunkwan University</h3>
-          <p>Assistant Professor, 2025 - Present</p>
-        </article>
-        <article>
-          <h3>KAIST</h3>
-          <p>Postdoctoral Research Associate, 2023 - 2024</p>
-        </article>
-      </div>
-    </section>
+            <div class="sidebar-social">
+                <a href="https://github.com/changmaaa" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/%EC%B0%BD%EB%AF%BC-%EC%9C%A0-loves010104/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://changmin-portfolio.notion.site/Hi-I-m-Changmin-Ryu-c04c9d77a1194faa9eb87926f5cfe6ac" target="_blank" title="Portfolio"><i class="fas fa-globe"></i></a>
+                <a href="mailto:minuiw0104@yonsei.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+                <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+            </div>
 
-    <section id="contact" class="panel reveal">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:changmin@example.com">changmin@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/" target="_blank" rel="noopener">github.com/your-id</a></p>
-    </section>
-  </main>
+            <div class="sidebar-buttons">
+                <a href="https://sites.google.com/view/thisischangmin" class="btn btn-primary" target="_blank">
+                    <i class="fas fa-file-alt"></i> Full Profile
+                </a>
+                <a href="https://sites.google.com/view/thisischangmin" class="btn btn-outline" target="_blank">
+                    <i class="fas fa-book-open"></i> Full Publications
+                </a>
+            </div>
 
-  <footer class="footer">
-    <p>© 2026 Changmin Kim</p>
-  </footer>
+            <nav class="sidebar-nav">
+                <a href="#about">About</a>
+                <a href="#news">Latest News</a>
+                <a href="#experience">Experience</a>
+                <a href="#publications">Publications</a>
+                <a href="#activities">Academic Activities</a>
+                <a href="#awards">Awards</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-  <script src="script.js"></script>
+            <div class="sidebar-section">
+                <h3 class="sidebar-section-title">Education</h3>
+                <ul class="sidebar-edu-list">
+                    <li class="sidebar-edu-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="sidebar-edu-info">
+                            <strong>Joint M.S./Ph.D. (Electrical &amp; Electronic Engineering)</strong>
+                            <span>Yonsei University, Seoul, Korea</span>
+                            <div class="edu-years">2025.03 - Present</div>
+                        </div>
+                    </li>
+                    <li class="sidebar-edu-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="sidebar-edu-info">
+                            <strong>B.S. (Biomedical Engineering)</strong>
+                            <span>Hankuk University of Foreign Studies, Yongin, Korea</span>
+                            <div class="edu-years">2019.03 - 2025.02</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <section id="about" class="about-section reveal">
+                <h2 class="about-heading">About Me</h2>
+                <p class="about-text">
+                    I am Changmin Ryu, an Integrated M.S./Ph.D. student in Electrical &amp; Electronic Engineering at
+                    <a href="https://www.yonsei.ac.kr/" target="_blank">Yonsei University</a>, and a researcher at the
+                    <a href="http://kimchi.yonsei.ac.kr/bizdemo45032/00/01.php" target="_blank">Medical Imaging Artificial Intelligence Laboratory</a>.
+                </p>
+                <p class="about-text">
+                    My primary interests are Medical Image Processing, eXplainable AI, Clinical Applications,
+                    and Multi-Modality data analysis.
+                </p>
+                <div class="about-contact">
+                    <span><i class="fas fa-map-marker-alt"></i> Seoul, Republic of Korea</span>
+                    <span><i class="fas fa-envelope"></i> <a href="mailto:minuiw0104@yonsei.ac.kr">minuiw0104@yonsei.ac.kr</a></span>
+                    <span><i class="fas fa-envelope"></i> <a href="mailto:loves010104@naver.com">loves010104@naver.com</a></span>
+                </div>
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    Open to Collaborations
+                </div>
+            </section>
+
+            <section id="news" class="section">
+                <div class="section-header reveal">
+                    <h2>Latest News</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="news-list stagger">
+                    <div class="news-row">
+                        <div class="news-date">2026</div>
+                        <div class="news-text">Two papers accepted to <b>ISMRM 2026</b>, both selected as <b>Oral Presentations</b>.</div>
+                    </div>
+                    <div class="news-row">
+                        <div class="news-date">2025</div>
+                        <div class="news-text">Received <b>Best Trainee Scientific Awards Oral Presentation (Silver)</b> at ICMRI 2025.</div>
+                    </div>
+                    <div class="news-row">
+                        <div class="news-date">2025</div>
+                        <div class="news-text">Received <b>KCR 2025 Best Abstract Awards</b>.</div>
+                    </div>
+                    <div class="news-row">
+                        <div class="news-date">2024</div>
+                        <div class="news-text">Received <b>Best Trainee Scientific Awards Poster Presentation (Gold)</b> at ICMRI 2024.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="section">
+                <div class="section-header reveal">
+                    <h2>Academic Experience</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="timeline stagger">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025.03 - Present</div>
+                        <div class="timeline-org">Yonsei University, Seoul</div>
+                        <div class="timeline-role">Joint M.S./Ph.D. Student, Electrical &amp; Electronic Engineering</div>
+                        <div class="timeline-detail">Medical Imaging Artificial Intelligence Laboratory (MILab)</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2019.03 - 2025.02</div>
+                        <div class="timeline-org">Hankuk University of Foreign Studies, Yongin</div>
+                        <div class="timeline-role">B.S. in Biomedical Engineering</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="publications" class="section">
+                <div class="section-header reveal">
+                    <h2>Selected Publications</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="filter-tabs reveal">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="conference">Conference</button>
+                    <button class="filter-tab" data-filter="journal">Journal</button>
+                    <button class="filter-tab" data-filter="patent">Patent</button>
+                </div>
+
+                <div class="pub-grid stagger">
+
+                    <article class="pub-card" data-venue="conference">
+                        <img src="papers/images/pub-placeholder.svg" alt="ISMRM 2026" class="pub-card-img">
+                        <div class="pub-card-body">
+                            <h3>Pediatric Brain Age Prediction via Age-Gated Interpretable Dual-Pathway Model with Disentangled Myelination and Gyrification</h3>
+                            <div class="pub-venue">
+                                <span class="pub-venue-tag">ISMRM 2026</span>
+                                <span class="pub-venue-tag highlight">Oral Presentation</span>
+                            </div>
+                            <div class="pub-authors"><span class="me">Changmin Ryu</span>, Kangrim Cho, Na-Young Shin, and Dong-Hyun Kim*</div>
+                            <div class="pub-links">
+                                <a href="https://sites.google.com/view/thisischangmin" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pub-card" data-venue="conference">
+                        <img src="papers/images/pub-placeholder.svg" alt="ISMRM 2026" class="pub-card-img">
+                        <div class="pub-card-body">
+                            <h3>Finite-difference based MR Electrical Properties Reconstruction Optimization Method at 3T</h3>
+                            <div class="pub-venue">
+                                <span class="pub-venue-tag">ISMRM 2026</span>
+                                <span class="pub-venue-tag highlight">Oral Presentation</span>
+                            </div>
+                            <div class="pub-authors">Kyu-Jin Jung, Thierry Meerbothe, Chuanjiang Cui, <span class="me">Changmin Ryu</span>, et al.</div>
+                            <div class="pub-links">
+                                <a href="https://sites.google.com/view/thisischangmin" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pub-card" data-venue="conference">
+                        <img src="papers/images/pub-placeholder.svg" alt="ICMRI 2025" class="pub-card-img">
+                        <div class="pub-card-body">
+                            <h3>Gyrification-Sensitive Brain Age Prediction in Neonates and Infants with Multi-Contrast Brain MRI Using Attention-Guided Deep Learning</h3>
+                            <div class="pub-venue">
+                                <span class="pub-venue-tag">ICMRI 2025</span>
+                                <span class="pub-venue-tag highlight">Oral / Silver Award</span>
+                            </div>
+                            <div class="pub-authors"><span class="me">Changmin Ryu</span>, Na-Young Shin, and Dong-Hyun Kim*</div>
+                            <div class="pub-links">
+                                <a href="https://sites.google.com/view/thisischangmin" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pub-card" data-venue="conference">
+                        <img src="papers/images/pub-placeholder.svg" alt="KCR 2025" class="pub-card-img">
+                        <div class="pub-card-body">
+                            <h3>Attention-Guided Deep Learning Model for Predicting Myelination Age from Multi-Contrast Brain MRI of Neonates and Infants</h3>
+                            <div class="pub-venue">
+                                <span class="pub-venue-tag">KCR 2025</span>
+                                <span class="pub-venue-tag highlight">Best Abstract Award</span>
+                            </div>
+                            <div class="pub-authors"><span class="me">Changmin Ryu</span>, Na-Young Shin, Sunyoung Jung, and Dong-Hyun Kim*</div>
+                            <div class="pub-links">
+                                <a href="https://sites.google.com/view/thisischangmin" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pub-card" data-venue="journal">
+                        <img src="papers/images/pub-placeholder.svg" alt="IEEE TBME" class="pub-card-img">
+                        <div class="pub-card-body">
+                            <h3>Zero-Shot Deep Anti-Aliasing Prior for Residual Artifact Suppression in non-Cartesian k-space MRI</h3>
+                            <div class="pub-venue">
+                                <span class="pub-venue-tag">IEEE Transactions on Biomedical Engineering</span>
+                                <span style="font-size:0.78rem;color:var(--text-muted)">2026</span>
+                            </div>
+                            <div class="pub-authors">Chuanjiang Cui*, Jaeuk Yi, Soo-Hyung Lee, <span class="me">Changmin Ryu</span>, et al.</div>
+                            <div class="pub-links">
+                                <a href="https://sites.google.com/view/thisischangmin" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pub-card" data-venue="patent">
+                        <img src="papers/images/pub-placeholder.svg" alt="Patent" class="pub-card-img">
+                        <div class="pub-card-body">
+                            <h3>Patent Applications on Infant Brain Age Prediction/Estimation Methods and Devices</h3>
+                            <div class="pub-venue">
+                                <span class="pub-venue-tag">Korea Patent Application</span>
+                                <span style="font-size:0.78rem;color:var(--text-muted)">2025</span>
+                            </div>
+                            <div class="pub-authors">Dong-Hyun Kim, <span class="me">Changmin Ryu</span>, Na-Young Shin</div>
+                            <div class="pub-links">
+                                <a href="https://sites.google.com/view/thisischangmin" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="activities" class="section">
+                <div class="section-header reveal">
+                    <h2>Academic Activities</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="service-grid stagger">
+                    <div class="service-block">
+                        <h3 class="service-category">Research Interests</h3>
+                        <div class="service-table">
+                            <div class="service-row">
+                                <span class="service-name">Medical Image Processing</span>
+                                <span class="service-years">Core</span>
+                            </div>
+                            <div class="service-row">
+                                <span class="service-name">eXplainable AI</span>
+                                <span class="service-years">Core</span>
+                            </div>
+                            <div class="service-row">
+                                <span class="service-name">Clinical Applications</span>
+                                <span class="service-years">Core</span>
+                            </div>
+                            <div class="service-row">
+                                <span class="service-name">Multi-Modality Data Analysis</span>
+                                <span class="service-years">Core</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-block">
+                        <h3 class="service-category">Links</h3>
+                        <div class="service-table">
+                            <div class="service-row">
+                                <a class="service-name" href="http://kimchi.yonsei.ac.kr/bizdemo45032/00/01.php" target="_blank">MILab, Yonsei</a>
+                                <span class="service-years">Lab</span>
+                            </div>
+                            <div class="service-row">
+                                <a class="service-name" href="https://changmin-portfolio.notion.site/Hi-I-m-Changmin-Ryu-c04c9d77a1194faa9eb87926f5cfe6ac" target="_blank">Portfolio (Notion)</a>
+                                <span class="service-years">Profile</span>
+                            </div>
+                            <div class="service-row">
+                                <a class="service-name" href="https://sites.google.com/view/thisischangmin" target="_blank">Google Sites</a>
+                                <span class="service-years">Archive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="awards" class="section">
+                <div class="section-header reveal">
+                    <h2>Awards &amp; Honors</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="awards-list stagger">
+                    <div class="award-pill">
+                        <span class="award-name">Best Trainee Scientific Awards Oral Presentation (Silver), ICMRI 2025</span>
+                        <span class="award-detail">2025</span>
+                    </div>
+                    <div class="award-pill">
+                        <span class="award-name">KCR 2025 Best Abstract Awards</span>
+                        <span class="award-detail">2025</span>
+                    </div>
+                    <div class="award-pill">
+                        <span class="award-name">Best Trainee Scientific Awards Poster Presentation (Gold), ICMRI 2024</span>
+                        <span class="award-detail">2024</span>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="contact">
+                <div class="footer-grid">
+                    <div>
+                        <div class="footer-brand">CR.</div>
+                        <div class="footer-copy">&copy; <span id="footer-year"></span> Changmin Ryu.</div>
+                    </div>
+                    <div class="footer-contact">
+                        Electrical &amp; Electronic Engineering<br>
+                        Yonsei University, Seoul, Republic of Korea<br>
+                        <a href="mailto:minuiw0104@yonsei.ac.kr">minuiw0104@yonsei.ac.kr</a><br>
+                        <a href="mailto:loves010104@naver.com">loves010104@naver.com</a>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="./js/main.js"></script>
+
 </body>
+
 </html>

@@ -1,25 +1,30 @@
-﻿# Homepage (GitHub Pages)
+﻿# Changmin Ryu Homepage (GitHub Pages)
 
-This folder is ready for a user GitHub Pages site (`username.github.io`).
+This site is deployed from this folder and follows the layout system of:
+- https://yoonseokchoi-ai.github.io/
 
-## Files
+Primary source profile:
+- https://sites.google.com/view/thisischangmin
+
+## Main Structure
 - `index.html`
-- `styles.css`
-- `script.js`
-- `assets/` (put profile image, CV PDF, etc.)
+- `css/academic.css`
+- `js/main.js`
+- `assets/profile.jpg`
+- `papers/images/pub-placeholder.svg`
 
-## Deploy
-1. Create a public repository named `YOUR_GITHUB_ID.github.io`.
-2. Upload all files in this folder to the repository root.
-3. Open `Settings -> Pages`.
-4. Set:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/(root)`
-5. Wait a minute and open `https://YOUR_GITHUB_ID.github.io/`.
+## Publish
+```powershell
+cd "C:\Users\loves\Desktop\MILAB\Homepage(RCM)"
+git add .
+git commit -m "Update homepage content"
+git push
+```
 
-## Customize first
-- Update name/affiliation in `index.html`.
-- Replace profile image URL with `assets/profile.jpg`.
-- Put your CV at `assets/CV_Changmin_Kim.pdf`.
-- Update email and links.
+Check after push:
+- https://changmaaa.github.io
+
+## Quick Edit Points
+- Publications cards in `index.html`
+- Research interest typing words in `js/main.js`
+- Profile image in `assets/profile.jpg`
