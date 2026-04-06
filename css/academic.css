@@ -1,40 +1,40 @@
 ﻿/* ═══════════════════════════════════════════════════════════
-   Academic Portfolio — Light Blue Theme
+   Academic Portfolio - Cobalt Blue Theme
    Sidebar + Main Content layout
    ═══════════════════════════════════════════════════════════ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&display=swap');
 
-/* ── Color Palette (Light Blue Tone) ────────────────────── */
+/* ── Color Palette (Cobalt Blue Tone) ────────────────────── */
 :root {
-    --bg-primary: #f5f8fc;
-    --bg-secondary: #e8eef6;
-    --bg-card: rgba(250, 253, 255, 0.9);
-    --bg-glass: rgba(245, 248, 252, 0.7);
-    --bg-hover: rgba(180, 200, 225, 0.2);
-    --bg-sidebar: #edf2f8;
+    --bg-primary: #f4f7ff;
+    --bg-secondary: #e7eefc;
+    --bg-card: rgba(250, 252, 255, 0.92);
+    --bg-glass: rgba(244, 247, 255, 0.76);
+    --bg-hover: rgba(132, 157, 215, 0.16);
+    --bg-sidebar: #edf2ff;
 
-    --text-primary: #1a2636;
-    --text-secondary: #5a6a7e;
-    --text-muted: #96a5b8;
+    --text-primary: #16233b;
+    --text-secondary: #4b5f82;
+    --text-muted: #8091ad;
 
-    --accent: #4a73a5;
-    --accent-hover: #2d5488;
-    --accent-glow: rgba(74, 115, 165, 0.06);
-    --accent-gradient: linear-gradient(135deg, #1a2636, #4a73a5);
+    --accent: #315da8;
+    --accent-hover: #23488a;
+    --accent-glow: rgba(49, 93, 168, 0.1);
+    --accent-gradient: linear-gradient(135deg, #1a3363, #315da8);
 
-    --highlight: #8b5e3c;
-    --success: #4c8a6a;
-    --tag-bg: rgba(74, 115, 165, 0.07);
-    --tag-border: rgba(74, 115, 165, 0.18);
+    --highlight: #7c57c9;
+    --success: #2d8a7a;
+    --tag-bg: rgba(49, 93, 168, 0.1);
+    --tag-border: rgba(49, 93, 168, 0.22);
 
-    --border-color: rgba(160, 180, 205, 0.4);
-    --border-strong: rgba(160, 180, 205, 0.7);
+    --border-color: rgba(128, 151, 195, 0.42);
+    --border-strong: rgba(112, 136, 182, 0.72);
 
-    --shadow-sm: 0 1px 3px rgba(26, 38, 54, 0.05);
-    --shadow-md: 0 4px 20px rgba(26, 38, 54, 0.07);
-    --shadow-lg: 0 8px 40px rgba(26, 38, 54, 0.09);
-    --shadow-glow: 0 0 30px rgba(74, 115, 165, 0.03);
+    --shadow-sm: 0 1px 3px rgba(22, 35, 59, 0.06);
+    --shadow-md: 0 4px 20px rgba(22, 35, 59, 0.08);
+    --shadow-lg: 0 8px 40px rgba(22, 35, 59, 0.1);
+    --shadow-glow: 0 0 30px rgba(49, 93, 168, 0.07);
 
     --sidebar-width: 300px;
     --header-height: 0px;
@@ -47,34 +47,34 @@
 
 /* ── Dark Mode ──────────────────────────────────────────── */
 [data-theme="dark"] {
-    --bg-primary: #121820;
-    --bg-secondary: #1a2230;
-    --bg-card: rgba(26, 34, 48, 0.9);
-    --bg-glass: rgba(18, 24, 32, 0.7);
-    --bg-hover: rgba(74, 115, 165, 0.1);
-    --bg-sidebar: #161e2a;
+    --bg-primary: #0e1729;
+    --bg-secondary: #13203a;
+    --bg-card: rgba(19, 32, 58, 0.9);
+    --bg-glass: rgba(14, 23, 41, 0.74);
+    --bg-hover: rgba(99, 143, 230, 0.14);
+    --bg-sidebar: #101d33;
 
-    --text-primary: #e0e6ed;
-    --text-secondary: #9aa8b8;
-    --text-muted: #5e6e80;
+    --text-primary: #e7eeff;
+    --text-secondary: #a8b8d8;
+    --text-muted: #7488ae;
 
-    --accent: #6b9ad4;
-    --accent-hover: #8bb4e8;
-    --accent-glow: rgba(107, 154, 212, 0.08);
-    --accent-gradient: linear-gradient(135deg, #6b9ad4, #8bb4e8);
+    --accent: #6a96e8;
+    --accent-hover: #8ab1ff;
+    --accent-glow: rgba(106, 150, 232, 0.16);
+    --accent-gradient: linear-gradient(135deg, #6a96e8, #95bcff);
 
-    --highlight: #e8886b;
-    --success: #6aab8a;
-    --tag-bg: rgba(107, 154, 212, 0.1);
-    --tag-border: rgba(107, 154, 212, 0.2);
+    --highlight: #b290ff;
+    --success: #5bc2ad;
+    --tag-bg: rgba(106, 150, 232, 0.16);
+    --tag-border: rgba(106, 150, 232, 0.3);
 
-    --border-color: rgba(100, 120, 150, 0.3);
-    --border-strong: rgba(100, 120, 150, 0.5);
+    --border-color: rgba(109, 133, 180, 0.34);
+    --border-strong: rgba(109, 133, 180, 0.56);
 
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
-    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.25);
-    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.3);
-    --shadow-glow: 0 0 30px rgba(107, 154, 212, 0.05);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.32);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.38);
+    --shadow-glow: 0 0 30px rgba(106, 150, 232, 0.1);
 }
 
 /* ── Reset & Base ───────────────────────────────────────── */
@@ -1226,4 +1226,6 @@ footer {
         max-height: 180px;
     }
 }
+
+
 
